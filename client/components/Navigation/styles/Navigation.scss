@@ -1,0 +1,24 @@
+@import 'core/vars';
+
+.Navigation {
+  border-bottom: $border-color 1px solid;
+  background-color: $bg-color-darken;
+
+
+  &__link {
+    padding: 1rem;
+    border-right: $border-color 1px solid;
+    color: $text-color;
+    text-decoration: none;
+    transition: background-color .2s linear;
+
+    &:hover, &--selected {
+      background-color: $border-color;
+    }
+  }
+
+  &__routes {
+    border-left: $border-color 1px solid;
+    display: flex;
+  }
+}

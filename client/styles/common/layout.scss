@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+
+  > * {
+    margin-right: 2rem;
+  }
+}
+
+.row-spaced {
+  @extend .row;
+
+  justify-content: space-between;
+
+  > * {
+    @extend .fill-remaining;
+    margin-right: 0;
+  }
+}
+
+.fill-remaining {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.m-b-1 {
+  margin-bottom: 1rem;
+}

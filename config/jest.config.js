@@ -27,6 +27,7 @@ const jestConfig = {
     modulePathIgnorePatterns: ['setupTests.ts'],
     transform: {
         '^.+\\.tsx?$': 'ts-jest',
+        "\\.(gql|graphql)$": "jest-transform-graphql",
         '^.+\\.(js|jsx)?$': 'babel-jest'
     },
     collectCoverage: true,

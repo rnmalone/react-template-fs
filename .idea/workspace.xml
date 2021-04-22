@@ -2,11 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e577322-4eae-4f6d-a8f2-6e74f5747eaf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/server/lang/en-GB.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/assetMiddleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/@types/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/store.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/api/todos.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/todos.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/client.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/client.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/tables.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/containers/Apollo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/containers/Apollo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/containers/AppIntlProvider/container/AppIntlProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/containers/AppIntlProvider/container/AppIntlProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/CoreLayout/CoreLayout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/CoreLayout/CoreLayout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/CoreLayout/CoreLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/CoreLayout/CoreLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/hooks/useScrollTo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/hooks/useWindowSize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/hooks/useWindowSize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/str.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/str.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/models/generic.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/models/todo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/modules/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/modules/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/modules/locale.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/modules/locale.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/routes/Todos/component/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/routes/Todos/component/Todos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/store/createStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/createStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/store/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/common/page-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/common/page-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/common/page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/common/table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/common/typeography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/common/typeography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/core/elements.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/core/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/core/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/mixins/border-color.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/mixins/padding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/transitions/opacity.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/transitions/slideIn.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/jest.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/project.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/project.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en-GB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lang/es.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/lang/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/plugins/HashedAssetPlugin.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/plugins/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/lib/logger.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/sorters/alphanumberic.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/sorters/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/lib/sorters/sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/assets/assets.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/assets/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/assets/models/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/clientRenderer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/clientRenderer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/localeMiddleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/localeMiddleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/resolvers/Todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/resolvers/Todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/locale.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/locale.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schema/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.server.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.server.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,17 +83,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
+        <option value="GraphQL File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1YwxEXGZICX8ejv4X7WByn9D9uQ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -42,24 +117,24 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="ts.external.directory.path" value="C:\Users\Rory Malone\Documents\react-template\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Rorym\react-template\public" />
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/server/middleware/assets" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="C:\Users\Rorym\react-template\client\assets\images" />
-      <recent name="$PROJECT_DIR$/bin" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\client" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\server\assets\images" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\client\components" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rory Malone\Documents\react-template\types" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\server\middleware" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\client\layouts\PageCentered" />
+      <recent name="C:\Users\Rory Malone\Documents\react-template\server" />
+      <recent name="C:\Users\Rory Malone\Documents\faux.it\scripts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +165,48 @@
       <workItem from="1599850802723" duration="258000" />
       <workItem from="1599851668642" duration="320000" />
       <workItem from="1599902515155" duration="52000" />
-      <workItem from="1599902693269" duration="1586000" />
+      <workItem from="1599902693269" duration="38639000" />
+      <workItem from="1599986998010" duration="29400000" />
+      <workItem from="1600103806010" duration="12276000" />
+      <workItem from="1600121149027" duration="1087000" />
+      <workItem from="1600190755489" duration="11950000" />
+      <workItem from="1600273977990" duration="5459000" />
+      <workItem from="1600458733735" duration="7071000" />
+      <workItem from="1600502399060" duration="9808000" />
+      <workItem from="1600594917011" duration="466000" />
+      <workItem from="1600595397917" duration="19163000" />
+      <workItem from="1600712628017" duration="9006000" />
+      <workItem from="1600791037411" duration="15210000" />
+      <workItem from="1600878586563" duration="16775000" />
+      <workItem from="1600966438888" duration="13762000" />
+      <workItem from="1601041800763" duration="18842000" />
+      <workItem from="1601121731679" duration="22528000" />
+      <workItem from="1601201133178" duration="34592000" />
+      <workItem from="1601301419578" duration="8701000" />
+      <workItem from="1601400038031" duration="16894000" />
+      <workItem from="1601458195522" duration="38259000" />
+      <workItem from="1601553749515" duration="21707000" />
+      <workItem from="1601629907999" duration="37828000" />
+      <workItem from="1601723478189" duration="3047000" />
+      <workItem from="1601892046070" duration="3010000" />
+      <workItem from="1601976253304" duration="12233000" />
+      <workItem from="1601995032777" duration="11473000" />
+      <workItem from="1602185151744" duration="413000" />
+      <workItem from="1602417352248" duration="5216000" />
+      <workItem from="1604164171851" duration="2000" />
+      <workItem from="1612618128381" duration="2000" />
+      <workItem from="1612618151854" duration="1383000" />
+      <workItem from="1612620700079" duration="5773000" />
+      <workItem from="1612978738219" duration="1263000" />
+      <workItem from="1613850223272" duration="421000" />
+      <workItem from="1617615054498" duration="3501000" />
+      <workItem from="1617619948238" duration="2018000" />
+      <workItem from="1617978606429" duration="915000" />
+      <workItem from="1617996024081" duration="5000" />
+      <workItem from="1618568317123" duration="382000" />
+      <workItem from="1618568723694" duration="16037000" />
+      <workItem from="1618654220153" duration="9032000" />
+      <workItem from="1619104946400" duration="9636000" />
     </task>
     <servers />
   </component>
@@ -109,18 +225,14 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599850990564">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599850990564" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1595453665824">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595453665824" />
-    <state x="646" y="241" width="627" height="558" key="find.popup" timestamp="1599850869218">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="646" y="241" width="627" height="558" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599850869218" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/lib/queries/selectRevenueFromSales.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,132 @@
-$arm-blue: #11809f;
-$arm-grey: #333e48;
 
-$border-color: #f2f2f2;
-$background-color: #f9f9f9;
+$content-width: 1000px;
+$mobile-threshold: 760px;
 
-$header-height: 80px;
+
+$bg-color: #252d37;
+$bg-color-darken: #1e252d;
+$bg-color-accent: #373741;
+$border-color: #404b5a;
+
+$text-color-light: #696969;
+$text-color: #3e3e3e;
+
+$text-color: #f2f2f2;
+
+$light-grey: #aeaeae;
+
+$red-value: #ee3556;
+$green-value: #74ff92;
+
+$gold: #ffe200;
+$silver: #a4a4a4;
+$bronze: #865c11;
+
+$pink: #ff3f74;
+$green: #00a003;
+$red: #ef2121;
+
+
+$purple: #6400aa;
+$purple1: $purple;
+$purple2: #6c23a7;
+$purple3: #7636a9;
+$purple4: #8855b3;
+$purple5: #9169b7;
+$purple6: #9e85be;
+$purple7: #ad9fc3;
+$purple8: #bdb6ca;
+
+$blue: #09289d;
+$blue1: $blue;
+$blue2: #1d4cfc;
+$blue3: #3760f8;
+$blue4: #5075ff;
+$blue5: #6585ff;
+$blue6: #7d99fd;
+$blue7: #95adfd;
+$blue8: #b5c4fd;
+
+$green: #1a7902;
+$green1: $green;
+$green2: #2e8818;
+$green3: #3f922a;
+$green4: #549642;
+$green5: #73ab67;
+$green6: #87b37e;
+$green7: #a5ca9e;
+$green8: #c8e2c4;
+
+$yellow: #ffd800;
+$yellow1: $yellow;
+$yellow2: #fcda2c;
+$yellow3: #fcdc4b;
+$yellow4: #fadf62;
+$yellow5: #f8e176;
+$yellow6: #f6e591;
+$yellow7: #f8eaa9;
+$yellow8: #fff2ce;
+
+$orange: #ff7d17;
+$orange1: $orange;
+$orange2: #fc852f;
+$orange3: #fa9148;
+$orange4: #fa9c5c;
+$orange5: #fcac75;
+$orange6: #f8b88a;
+$orange7: #fdc89f;
+$orange8: #fcd3b8;
+
+
+$box-shadow: 0px 0px 20px 3px rgba(189, 189, 189, 0.18);
+
+:export {
+  red: $red-value;
+  green: $green;
+  orange: $orange;
+  yellow: $yellow;
+  purple: $purple;
+  lightGrey: $light-grey;
+  pink: $pink;
+  blue: $blue;
+  purple1: $purple1;
+  purple2: $purple2;
+  purple3: $purple3;
+  purple4: $purple4;
+  purple5: $purple5;
+  purple6: $purple6;
+  purple7: $purple7;
+  purple8: $purple8;
+  blue1: $blue1;
+  blue2: $blue2;
+  blue3: $blue3;
+  blue4: $blue4;
+  blue5: $blue5;
+  blue6: $blue6;
+  blue7: $blue7;
+  blue8: $blue8;
+  yellow1: $yellow1;
+  yellow2: $yellow2;
+  yellow3: $yellow3;
+  yellow4: $yellow4;
+  yellow5: $yellow5;
+  yellow6: $yellow6;
+  yellow7: $yellow7;
+  yellow8: $yellow8;
+  green1: $green1;
+  green2: $green2;
+  green3: $green3;
+  green4: $green4;
+  green5: $green5;
+  green6: $green6;
+  green7: $green7;
+  green8: $green8;
+  orange1: $orange1;
+  orange2: $orange2;
+  orange3: $orange3;
+  orange4: $orange4;
+  orange5: $orange5;
+  orange6: $orange6;
+  orange7: $orange7;
+  orange8: $orange8;
+}

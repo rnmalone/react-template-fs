@@ -8,12 +8,16 @@ html(lang=locale)
         meta(http-equiv='X-UA-Compatible' content='IE=edge')
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+        meta(name='description', content=metaDescription)
 
         each styleHref in assets.css
             link(rel='stylesheet' href=styleHref)
 
     body
-        #root(style='height: 100%')
+        #root()
+
+        script(nonce=scriptId).
+            window.__INITIAL_STATE__ = !{initialClientState};
 
         each scriptSrc in assets.js
-            script(src=scriptSrc)
+            script(src=scriptSrc, nonce=scriptId)

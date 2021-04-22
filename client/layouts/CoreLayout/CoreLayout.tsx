@@ -1,16 +1,20 @@
-import React from 'react';
-import {IComponentProps} from "../../models/generic";
-
+import React, { ReactChild } from 'react';
 import './CoreLayout.scss';
+import { Footer, Header, Navigation } from "../../components";
+import { PageCentered } from "../index";
 
-export default function CoreLayout({children}: IComponentProps) {
+export default function CoreLayout({children}: { children: ReactChild | ReactChild[] }) {
+
     return (
         <>
+            <Header />
+            <Navigation />
             <main role="main">
-                <div className="container">
+                <PageCentered>
                     {children}
-                </div>
+                </PageCentered>
             </main>
+            <Footer />
         </>
     )
 }

@@ -1,12 +1,17 @@
-const debug = require('debug')('app:config:project');
+require('dotenv').config();
+
 const path = require('path');
 
-debug('Creating default config.');
 // ===================================================================
 // Default Configuration
 // ===================================================================
 const config = {
     env: 'development',
+
+    // Seed mock database entries on startup
+    seedData: process.env.SEED_DATA || false,
+    // Add seed data on every server reload
+    forceSeed: false,
 
     // -------------------------------------
     // Project dirs structure
@@ -16,7 +21,8 @@ const config = {
         client: 'client',
         public: 'public',
         server: 'server',
-        resources: 'resources'
+        resources: 'resources',
+        logs: 'logs',
     },
 
     // -------------------------------------
@@ -25,7 +31,8 @@ const config = {
     client: {
         // APP Base Path WITH leading AND ending slash
         basePath: process.env.BASE_PATH || '/',
-        supportedBrowsers: ['> 1%', 'last 2 versions', 'not ie <=10', 'ie 11', 'Firefox ESR']
+        supportedBrowsers: ['> 1%', 'last 2 versions', 'not ie <=10', 'ie 11', 'Firefox ESR'],
+        metaDescription: 'My template app'
     },
 
     // -------------------------------------
@@ -37,10 +44,14 @@ const config = {
 
         publicAddress: process.env.HOST || 'localhost',
 
+        apiBaseUri: process.env.API_BASE_PATH || '/v1/api',
+        localeUrl: process.env.LOCALE_URL || '/locale',
+
         templateLocals: {
             title: 'Template'
         }
     },
+
 
     // -------------------------------------
     // Build configuration
@@ -51,12 +62,14 @@ const config = {
     }
 };
 
+
+
 config.server.templateLocals.basePath = config.client.basePath;
 
 // -------------------------------------
 // Path utilities
 // -------------------------------------
-const basePath = path.resolve(__dirname, '..');
+const basePath = path.resolve(__dirname, process.env.NODE_ENV !== 'development' ? '..' : '', '..');
 
 function getPath(...args) {
     return path.resolve(basePath, ...args);
@@ -68,6 +81,7 @@ config.paths = {
     client: getPath.bind(null, config.dirs.client),
     public: getPath.bind(null, config.dirs.public),
     server: getPath.bind(null, config.dirs.server),
+    logs: getPath.bind(null, config.dirs.logs),
     resources: getPath.bind(null, config.dirs.resources)
 };
 

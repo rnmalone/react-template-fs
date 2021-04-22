@@ -1,0 +1,24 @@
+@import 'core/vars';
+
+@keyframes _appear {
+  0% {
+    transform: scale(0.9);
+  }
+
+  80% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.page-item {
+  animation: _appear .2s linear;
+  background-color: $bg-color-accent;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: $border-color 1px solid;
+}

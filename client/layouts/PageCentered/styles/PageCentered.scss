@@ -1,0 +1,14 @@
+@import 'core/vars';
+
+.PageCentered {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+
+  > div {
+    margin: 0 2rem;
+    width: $content-width;
+    max-width: $content-width;
+    overflow-x: hidden;
+  }
+}

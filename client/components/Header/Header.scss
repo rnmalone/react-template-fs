@@ -1,0 +1,11 @@
+@import 'core/vars';
+
+header {
+  padding: 1rem 0;
+  border-bottom: $border-color 1px solid;
+  background-color: $bg-color-darken;
+
+  h1 {
+    margin: 0;
+  }
+}

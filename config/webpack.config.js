@@ -1,63 +1,19 @@
 const webpack = require('webpack');
 const project = require('./project.config');
-const HashedAssetPlugin = require('../lib/plugins');
-
-const APP_ENTRY = project.paths.client('main.tsx');
+const {appEntry} = require('./paths')
 const APP_PUBLIC_PATH = project.client.basePath;
+const { manifestPlugin, SASS_LOADER, CSS_LOADER, POSTCSS_LOADER } = require("./webpack.modules");
 
-const CSS_LOADER = {
-    loader: 'css-loader',
-    options: {
-        sourceMap: project.build.sourceMap,
-        importLoaders: 1
-    }
-};
-
-const POSTCSS_LOADER = {
-    loader: 'postcss-loader',
-    options: {
-        sourceMap: project.build.sourceMap,
-        plugins: () => [
-            require('cssnano')({
-                autoprefixer: {
-                    add: true,
-                    remove: true,
-                    browsers: project.client.supportedBrowsers
-                },
-                discardComments: {
-                    removeAll: true
-                },
-                discardUnused: false,
-                mergeIdents: false,
-                reduceIdents: false,
-                safe: true,
-                sourcemap: project.build.sourceMap
-            })
-        ]
-    }
-};
-
-const SASS_LOADER = {
-    loader: 'sass-loader',
-    options: {
-        sourceMap: project.build.sourceMap,
-        sassOptions: {
-            includePaths: [
-                project.paths.client('styles')
-            ]
-        }
-    }
-};
 
 module.exports = {
-    devtool: 'eval',
+    devtool: 'inline-source-map',
     mode: 'development',
     target: 'web',
     entry: [
         '@babel/polyfill',
         'react-hot-loader/patch',
         `webpack-hot-middleware/client?path=${APP_PUBLIC_PATH}__hot_reload&reload=true`,
-        APP_ENTRY
+        appEntry
     ],
     output: {
         filename: 'js/[name].[hash].js',
@@ -77,8 +33,12 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                loader: 'ts-loader',
                 exclude: /node_modules/,
+                options: {
+                    // Allows to compile the client code in development when there are ts errors
+                    transpileOnly: true
+                }
             },
             {
                 test: /\.js$/,
@@ -177,11 +137,16 @@ module.exports = {
                         limit: 10000
                     }
                 }
+            },
+            {
+                test: /\.(graphql|gql)$/,
+                exclude: /node_modules/,
+                loader: ['graphql-tag/loader']
             }
         ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new HashedAssetPlugin.default()
+        manifestPlugin
     ]
 };
